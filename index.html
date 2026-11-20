@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jai Harish | Computing Student &amp; Developer, Dublin</title>
+<meta name="description" content="Jai Harish (Jai Harish Depuru Sureshkumar) is a third-year Computing student at TU Dublin building full-stack web apps and AI projects.">
+<meta name="author" content="Jai Harish">
+<link rel="canonical" href="https://jaih-27.github.io/">
+<meta property="og:title" content="Jai Harish | Computing Student & Developer">
+<meta property="og:description" content="Third-year Computing student at TU Dublin building full-stack web apps and AI projects.">
+<meta property="og:url" content="https://jaih-27.github.io/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Jai Harish","alternateName":["Jai Harish Depuru Sureshkumar","Jai Depuru"],"url":"https://jaih-27.github.io/","jobTitle":"Computing Student","alumniOf":"Technological University Dublin","address":{"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},"sameAs":["https://www.linkedin.com/in/jai-depuru","https://github.com/JaiH-27"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f12; --panel: #15181d; --line: #262a31;
+    --text: #e8e6e1; --muted: #9a9890; --accent: #c6f36b;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Inter", system-ui, sans-serif; font-size: 16px; line-height: 1.65;
+    background-image: radial-gradient(circle at 85% -10%, rgba(198,243,107,0.10), transparent 45%);
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 28px 0; }
+  nav .logo { font-family: "JetBrains Mono", monospace; color: var(--accent); font-size: 14px; }
+  nav .nl a { color: var(--muted); text-decoration: none; margin-left: 22px; font-size: 14px; }
+  nav .nl a:hover { color: var(--text); }
+
+  header { padding: 72px 0 64px; }
+  .kicker { font-family: "JetBrains Mono", monospace; color: var(--accent); font-size: 14px; margin-bottom: 18px; }
+  h1 {
+    font-family: "Space Grotesk", sans-serif; font-weight: 700;
+    font-size: clamp(48px, 9vw, 92px); line-height: 0.95; letter-spacing: -0.03em; margin: 0 0 24px;
+  }
+  .lead { font-size: 19px; color: var(--muted); max-width: 580px; margin: 0 0 32px; }
+  .lead strong { color: var(--text); font-weight: 500; }
+  .btns a {
+    display: inline-block; padding: 11px 20px; border-radius: 999px; margin: 0 10px 10px 0;
+    text-decoration: none; font-size: 15px; font-weight: 500; border: 1px solid var(--line); color: var(--text);
+    transition: border-color .2s, background .2s;
+  }
+  .btns a.primary { background: var(--accent); color: #0d0f12; border-color: var(--accent); }
+  .btns a:hover { border-color: var(--accent); }
+
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-family: "JetBrains Mono", monospace; font-weight: 400; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin: 0 0 28px;
+  }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px;
+    text-decoration: none; color: var(--text); transition: transform .2s, border-color .2s; display: block;
+  }
+  .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .card h3 { font-family: "Space Grotesk", sans-serif; font-size: 20px; margin: 0 0 8px; }
+  .card p { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
+  .tags span {
+    font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--accent);
+    border: 1px solid rgba(198,243,107,0.3); border-radius: 6px; padding: 2px 8px; margin: 0 6px 6px 0; display: inline-block;
+  }
+
+  .row { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px dashed var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .row b { font-weight: 500; }
+  .row .org { color: var(--muted); }
+  .row .when { font-family: "JetBrains Mono", monospace; font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+  .chips span {
+    display: inline-block; background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; margin: 0 8px 10px 0; font-size: 14px;
+  }
+  footer { padding: 40px 0 60px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  footer a { color: var(--muted); }
+  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } .row { flex-direction: column; gap: 2px; } nav .nl a { margin-left: 14px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <span class="logo">jai.harish</span>
+  <span class="nl"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="mailto:jaiharishdepuru@gmail.com">Contact</a></span>
+</nav>
+
+<header>
+  <div class="kicker">// Dublin, Ireland</div>
+  <h1>Jai Harish</h1>
+  <p class="lead">Third-year <strong>Computing</strong> student at <strong>TU Dublin</strong>. I build full-stack web apps and AI tools, and I spend a lot of weekends at hackathons.</p>
+  <div class="btns">
+    <a class="primary" href="https://www.linkedin.com/in/jai-depuru">LinkedIn</a>
+    <a href="https://github.com/JaiH-27">GitHub</a>
+    <a href="mailto:jaiharishdepuru@gmail.com">Email me</a>
+  </div>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <a class="card" href="https://github.com/JaiH-27/fedramp-auto">
+      <h3>fedramp-auto</h3>
+      <p>Scans Terraform, Azure ARM and AWS CDK code and produces a FedRAMP compliance gap report, fully local.</p>
+      <div class="tags"><span>Python</span><span>Ollama</span><span>AWS</span></div>
+    </a>
+    <a class="card" href="https://github.com/JaiH-27/future-body-visualizer">
+      <h3>Future You</h3>
+      <p>Hackathon project showing how lifestyle habits could affect organ risk over time.</p>
+      <div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span></div>
+    </a>
+    <a class="card" href="https://github.com/JaiH-27/My-Health-Buddy">
+      <h3>My Health Buddy</h3>
+      <p>Team-built health app with simulation examples.</p>
+      <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Supabase</span></div>
+    </a>
+    <a class="card" href="https://github.com/JaiH-27/IIE.github.io">
+      <h3>Ireland Indian Entertainments</h3>
+      <p>Website built as a volunteer web developer.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span></div>
+    </a>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="row"><div><b>Team Member</b> <span class="org">· Give(a)Go</span></div><span class="when">2025 – now</span></div>
+  <div class="row"><div><b>Secretary</b> <span class="org">· Enactus TU Dublin</span></div><span class="when">2026 – now</span></div>
+  <div class="row"><div><b>Campus Ambassador</b> <span class="org">· Lovable</span></div><span class="when">2025 – 2026</span></div>
+  <div class="row"><div><b>IT Engineer</b> <span class="org">· St James's Hospital Dublin</span></div><span class="when">2025 – 2026</span></div>
+</section>
+
+<section>
+  <h2>Hackathons</h2>
+  <div class="row"><div><b>PolicyPal</b> <span class="org">· AI Tech Challenge 2025</span></div><span class="when">3rd at venue</span></div>
+  <div class="row"><div><b>DigiBin</b> <span class="org">· TUD Hackathon 2025</span></div><span class="when">Team build</span></div>
+  <div class="row"><div><b>Mentor</b> <span class="org">· NASA Space Apps Dublin</span></div><span class="when">Mentor</span></div>
+</section>
+
+<section>
+  <h2>Stack</h2>
+  <div class="chips">
+    <span>TypeScript</span><span>React</span><span>Next.js</span><span>SvelteKit</span><span>Java</span><span>Python</span><span>PostgreSQL</span><span>MongoDB</span><span>Supabase</span><span>AWS</span><span>Git</span>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Jai Harish · BSc Computing, TU Dublin</span>
+  <span><a href="https://www.linkedin.com/in/jai-depuru">LinkedIn</a> · <a href="https://github.com/JaiH-27">GitHub</a></span>
+</footer>
+
+</div>
+</body>
+</html>
